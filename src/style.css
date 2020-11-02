@@ -11,3 +11,9 @@
 .additive-symbols-list {
     list-style-type: additive-symbols-dice;
 }
+
+
+.after-nullpo::after {
+    content: "\A 2 ：仕様書無しさん ：02/06/20 15:11 \A　>>1\A 　ｶﾞｯ";
+    white-space: pre;
+}

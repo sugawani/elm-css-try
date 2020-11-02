@@ -53,6 +53,8 @@ view model =
         , active
         , h2 [] [ text "additive-symbols(Firefoxのみ対応)" ]
         , additiveSymbols
+        , h2 [] [ text "::after" ]
+        , after
         ]
 
 
@@ -84,5 +86,19 @@ additiveSymbols =
             , li [] [ text "Four" ]
             , li [] [ text "Five" ]
             , li [] [ text "Six" ]
+            ]
+        ]
+
+
+after : Html Msg
+after =
+    div []
+        [ text "指定したクラスの後ろに要素を追加できる"
+        , p [ A.class "after-nullpo" ]
+            [ text "1. 仕様書無しさん :20/11/02 13:00:00" 
+            , br [] []
+            , text "　　∧＿∧ 　　"
+            , br [] []
+            , text "　（　´∀｀）＜　ぬるぽ"
             ]
         ]
