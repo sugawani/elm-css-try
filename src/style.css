@@ -1,3 +1,13 @@
 .pseudo-active:active {
     color: green;
 }
+
+@counter-style additive-symbols-dice {
+    system: additive;
+	additive-symbols: 6 "\2685", 5 "\2684", 4 "\2683", 3 "\2682", 2 "\2681", 1 "\2680";
+	suffix: " ";
+}
+
+.additive-symbols-list {
+    list-style-type: additive-symbols-dice;
+}

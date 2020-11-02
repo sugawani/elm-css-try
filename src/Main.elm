@@ -9,7 +9,7 @@ main =
     Browser.sandbox
         { init = init
         , update = update
-        , view = view 
+        , view = view
         }
 
 
@@ -51,7 +51,8 @@ view model =
         [ h1 [] [ text "A" ]
         , h2 [] [ text ":active" ]
         , active
-        , h2 [] [ text "" ]
+        , h2 [] [ text "additive-symbols(Firefoxのみ対応)" ]
+        , additiveSymbols
         ]
 
 
@@ -68,5 +69,20 @@ active =
                 ]
                 [ text "active"
                 ]
+            ]
+        ]
+
+
+additiveSymbols : Html Msg
+additiveSymbols =
+    div []
+        [ text "@counter-styleと組み合わせてliの独自のマーカーを定義できる"
+        , ul [ A.class "additive-symbols-list" ]
+            [ li [] [ text "One" ]
+            , li [] [ text "Two" ]
+            , li [] [ text "Three" ]
+            , li [] [ text "Four" ]
+            , li [] [ text "Five" ]
+            , li [] [ text "Six" ]
             ]
         ]
