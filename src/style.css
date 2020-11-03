@@ -14,7 +14,7 @@
 
 
 .after-nullpo::after {
-    content: "\A 2 ：仕様書無しさん ：02/06/20 15:11 \A　>>1\A 　ｶﾞｯ";
+    content: "\A 2. 仕様書無しさん :20/11/02 13:01:00 \A　>>1\A 　ｶﾞｯ\A　※このレスは::afterで追加した";
     white-space: pre;
 }
 
