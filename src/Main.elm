@@ -136,6 +136,15 @@ alignContent =
                 ]
                 flexContent
             ]
+        , div []
+            [ h3 [] [ text "stretch" ]
+            , text "コンテナサイズに合わせて引き伸ばす"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-content-stretch"
+                ]
+                flexContent
+            ]
         ]
 
 
