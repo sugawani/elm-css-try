@@ -56,7 +56,8 @@ view model =
         , h2 [] [ text "::after" ]
         , after
         , h2 [] [ text "align-content(flexとflex-wrapが必要)" ]
-        , alignContent
+        , h3 [] [ text "均等配置" ]
+        , distributedAlignContent
         ]
 
 
@@ -106,11 +107,11 @@ after =
         ]
 
 
-alignContent : Html Msg
-alignContent =
+distributedAlignContent : Html Msg
+distributedAlignContent =
     div [ A.style "display" "flex" ]
         [ div []
-            [ h3 [] [ text "space-around" ]
+            [ h4 [] [ text "space-around" ]
             , text "端にはアイテム間の半分の間隔を空ける"
             , div
                 [ A.class "flex-container"
@@ -119,7 +120,7 @@ alignContent =
                 flexContent
             ]
         , div []
-            [ h3 [] [ text "space-between" ]
+            [ h4 [] [ text "space-between" ]
             , text "先頭と末尾にそれぞれ寄せる"
             , div
                 [ A.class "flex-container" 
@@ -128,7 +129,7 @@ alignContent =
                 flexContent
             ]
         , div []
-            [ h3 [] [ text "space-evenly" ]
+            [ h4 [] [ text "space-evenly" ]
             , text "端にはアイテム感と同じ間隔を空ける"
             , div
                 [ A.class "flex-container" 
@@ -137,7 +138,7 @@ alignContent =
                 flexContent
             ]
         , div []
-            [ h3 [] [ text "stretch" ]
+            [ h4 [] [ text "stretch" ]
             , text "コンテナサイズに合わせて引き伸ばす"
             , div
                 [ A.class "flex-container"
