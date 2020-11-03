@@ -17,3 +17,25 @@
     content: "\A 2 ：仕様書無しさん ：02/06/20 15:11 \A　>>1\A 　ｶﾞｯ";
     white-space: pre;
 }
+
+.flex-container {
+    display: flex;
+    background-color: gray;
+    width: 300px;
+    height: 280px;
+    flex-wrap: wrap;
+}
+
+.flex-container > div {
+    width: 90px;
+    height: 90px;
+    margin: 3px;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+}
+
+.align-content-space-around {
+    align-content: space-around;
+}

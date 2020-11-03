@@ -55,6 +55,8 @@ view model =
         , additiveSymbols
         , h2 [] [ text "::after" ]
         , after
+        , h2 [] [ text "align-content(flexとflex-wrapが必要)" ]
+        , alignContent
         ]
 
 
@@ -95,10 +97,33 @@ after =
     div []
         [ text "指定したクラスの後ろに要素を追加できる"
         , p [ A.class "after-nullpo" ]
-            [ text "1. 仕様書無しさん :20/11/02 13:00:00" 
+            [ text "1. 仕様書無しさん :20/11/02 13:00:00"
             , br [] []
-            , text "　　∧＿∧ 　　"
+            , text "\u{3000}\u{3000}∧＿∧"
             , br [] []
-            , text "　（　´∀｀）＜　ぬるぽ"
+            , text "\u{3000}（\u{3000}´∀｀）＜\u{3000}ぬるぽ"
             ]
         ]
+
+
+alignContent : Html Msg
+alignContent =
+    div []
+        [ h3 [] [ text "space-around" ]
+        , text "均等配置し、両側に半分の間隔を空ける"
+        , div
+            [ A.class "flex-container"
+            , A.class "align-content-space-around"
+            ]
+            flexContent
+        ]
+
+
+flexContent : List (Html Msg)
+flexContent =
+    [ div [] [ text "1" ]
+    , div [] [ text "2" ]
+    , div [] [ text "3" ]
+    , div [] [ text "4" ]
+    , div [] [ text "5" ]
+    ]
