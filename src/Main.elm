@@ -111,7 +111,7 @@ alignContent =
     div [ A.style "display" "flex" ]
         [ div []
             [ h3 [] [ text "space-around" ]
-            , text "均等配置し、両側に半分の間隔を空ける"
+            , text "端にはアイテム間の半分の間隔を空ける"
             , div
                 [ A.class "flex-container"
                 , A.class "align-content-space-around"
@@ -120,10 +120,19 @@ alignContent =
             ]
         , div []
             [ h3 [] [ text "space-between" ]
-            , text "均等配置し、先頭と末尾にそれぞれ寄せる"
+            , text "先頭と末尾にそれぞれ寄せる"
             , div
                 [ A.class "flex-container" 
                 , A.class "align-content-space-between"
+                ]
+                flexContent
+            ]
+        , div []
+            [ h3 [] [ text "space-evenly" ]
+            , text "端にはアイテム感と同じ間隔を空ける"
+            , div
+                [ A.class "flex-container" 
+                , A.class "align-content-space-evenly"
                 ]
                 flexContent
             ]

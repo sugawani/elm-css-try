@@ -12,7 +12,6 @@
     list-style-type: additive-symbols-dice;
 }
 
-
 .after-nullpo::after {
     content: "\A 2. 仕様書無しさん :20/11/02 13:01:00 \A　>>1\A 　ｶﾞｯ\A　※このレスは::afterで追加した";
     white-space: pre;
@@ -40,7 +39,10 @@
     align-content: space-around;
 }
 
-
 .align-content-space-between {
     align-content: space-between;
+}
+
+.align-content-space-evenly {
+    align-content: space-evenly;
 }
