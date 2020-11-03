@@ -11,6 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: elm install
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - run: npm install elm
 
       - name: yarn install
         uses: nuxt/actions-yarn@master
