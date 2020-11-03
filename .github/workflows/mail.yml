@@ -30,5 +30,4 @@ jobs:
       - name: publish github pages
         uses: peaceiris/actions-github-pages@v3.1.12
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs
