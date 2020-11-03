@@ -31,5 +31,5 @@ jobs:
         uses: peaceiris/actions-github-pages@v3.1.12
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_branch: master
+          publish_branch: publish_gh_pages
           publish_dir: docs
