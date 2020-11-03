@@ -26,3 +26,9 @@ jobs:
         uses: nuxt/actions-yarn@master
         with:
           args: "build-github-pages"
+
+      - name: publish github pages
+        uses: peaceiris/actions-github-pages@v3.1.12
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs
