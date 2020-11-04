@@ -219,10 +219,22 @@ baselineAlignContent =
     div [ A.class "align-content-container" ]
         [ div []
             [ h4 [] [ text "baseline" ]
-            , text "ベースラインに合わせる？よくわからん"
+            , text "1行目のベースラインに合わせる"
             , div
                 [ A.class "flex-container"
                 , A.class "align-content-baseline"
+                ]
+                [ div [] [ text "1" ]
+                , div [] [ text "改行", br [] [] ,text "テキスト" ]
+                , div [] [ text "3" ]
+                ]
+            ]
+        , div []
+            [ h4 [] [ text "first baseline(Firefoxのみ対応)" ]
+            , text "1行目のベースラインに合わせる"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-content-first-baseline"
                 ]
                 [ div [] [ text "1" ]
                 , div [] [ text "改行", br [] [] ,text "テキスト" ]

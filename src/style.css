@@ -79,3 +79,7 @@
 .align-content-baseline {
     align-content: baseline;
 }
+
+.align-content-first-baseline {
+    align-content: first baseline;
+}
