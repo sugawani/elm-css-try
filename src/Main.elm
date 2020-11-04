@@ -174,11 +174,20 @@ basicPositionalAlignContent =
                 flexContent
             ]
         , div []
-            [ h4 [] [ text "start" ]
+            [ h4 [] [ text "start(Firefoxのみ対応)" ]
             , text "先頭寄せ"
             , div
                 [ A.class "flex-container"
                 , A.class "align-content-start"
+                ]
+                flexContent
+            ]
+        , div []
+            [ h4 [] [ text "end(Firefoxのみ対応)" ]
+            , text "末尾寄せ"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-content-end"
                 ]
                 flexContent
             ]
