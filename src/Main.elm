@@ -191,4 +191,13 @@ basicPositionalAlignContent =
                 ]
                 flexContent
             ]
+        , div []
+            [ h4 [] [ text "flex-start" ]
+            , text "flexコンテナに依存した先頭寄せ"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-content-flex-start"
+                ]
+                flexContent
+            ]
         ]
