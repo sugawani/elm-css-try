@@ -163,7 +163,7 @@ flexContent =
 
 basicPositionalAlignContent : Html Msg
 basicPositionalAlignContent =
-    div [ A.style "display" "flex" ]
+    div [ A.class "align-content-container" ]
         [ div []
             [ h4 [] [ text "center" ]
             , text "中央寄せ"

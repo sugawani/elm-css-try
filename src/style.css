@@ -17,6 +17,11 @@
     white-space: pre;
 }
 
+.align-content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .flex-container {
     display: flex;
     background-color: gray;
