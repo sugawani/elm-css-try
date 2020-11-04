@@ -50,3 +50,7 @@
 .align-content-space-stretch {
     align-content: stretch;
 }
+
+.align-content-center {
+    align-content: center;
+}

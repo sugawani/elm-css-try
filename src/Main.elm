@@ -58,6 +58,8 @@ view model =
         , h2 [] [ text "align-content(flexとflex-wrapが必要)" ]
         , h3 [] [ text "均等配置" ]
         , distributedAlignContent
+        , h3 [] [ text "位置指定" ]
+        , basicPositionalAlignContent
         ]
 
 
@@ -157,3 +159,18 @@ flexContent =
     , div [] [ text "4" ]
     , div [] [ text "5" ]
     ]
+
+
+basicPositionalAlignContent : Html Msg
+basicPositionalAlignContent =
+    div [ A.style "display" "flex" ]
+        [ div []
+            [ h4 [] [ text "center" ]
+            , text "中央寄せ"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-content-center"
+                ]
+                flexContent
+            ]
+        ]
