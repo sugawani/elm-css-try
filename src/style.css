@@ -75,3 +75,7 @@
 .align-content-flex-end {
     align-content: flex-end;
 }
+
+.align-content-baseline {
+    align-content: baseline;
+}

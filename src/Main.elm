@@ -60,6 +60,8 @@ view model =
         , distributedAlignContent
         , h3 [] [ text "位置指定" ]
         , basicPositionalAlignContent
+        , h3 [] [ text "ベースライン" ]
+        , baselineAlignContent
         ]
 
 
@@ -208,5 +210,23 @@ basicPositionalAlignContent =
                 , A.class "align-content-flex-end"
                 ]
                 flexContent
+            ]
+        ]
+
+
+baselineAlignContent : Html Msg
+baselineAlignContent =
+    div [ A.class "align-content-container" ]
+        [ div []
+            [ h4 [] [ text "baseline" ]
+            , text "ベースラインに合わせる？よくわからん"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-content-baseline"
+                ]
+                [ div [] [ text "1" ]
+                , div [] [ text "改行", br [] [] ,text "テキスト" ]
+                , div [] [ text "3" ]
+                ]
             ]
         ]
