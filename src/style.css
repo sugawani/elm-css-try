@@ -66,3 +66,7 @@
 .align-content-flex-start {
     align-content: flex-start;
 }
+
+.align-content-flex-end {
+    align-content: flex-end;
+}

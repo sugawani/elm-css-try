@@ -200,4 +200,13 @@ basicPositionalAlignContent =
                 ]
                 flexContent
             ]
+        , div []
+            [ h4 [] [ text "flex-end" ]
+            , text "flexコンテナに依存した末尾寄せ"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-content-flex-end"
+                ]
+                flexContent
+            ]
         ]
