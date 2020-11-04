@@ -83,3 +83,7 @@
 .align-content-first-baseline {
     align-content: first baseline;
 }
+
+.align-content-last-baseline {
+    align-content: last baseline;
+}

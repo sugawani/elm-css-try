@@ -241,4 +241,16 @@ baselineAlignContent =
                 , div [] [ text "3" ]
                 ]
             ]
+        , div []
+            [ h4 [] [ text "last baseline(Firefoxのみ対応)" ]
+            , text "最終行のベースラインに合わせる"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-content-last-baseline"
+                ]
+                [ div [] [ text "1" ]
+                , div [] [ text "改行", br [] [] ,text "テキスト" ]
+                , div [] [ text "3" ]
+                ]
+            ]
         ]
