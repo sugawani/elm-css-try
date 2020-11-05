@@ -264,10 +264,24 @@ normalAlignItems =
     div [ A.class "align-items-container" ]
         [ div []
             [ h4 [] [ text "normal" ]
-            , text "レイアウトに依存 flexの場合strech"
+            , text "レイアウトに依存 flexの場合stretch"
             , div
                 [ A.class "flex-container"
                 , A.class "align-items-cormal"
+                ]
+                [ div [] [ text "1" ]
+                , div [] [ text "2" ]
+                , div [] [ text "3" ]
+                , div [] [ text "4" ]
+                , div [] [ text "5" ]
+                ]
+            ]
+        , div []
+            [ h4 [] [ text "stretch" ]
+            , text "範囲いっぱいまで伸びる"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-items-stretch"
                 ]
                 [ div [] [ text "1" ]
                 , div [] [ text "2" ]
