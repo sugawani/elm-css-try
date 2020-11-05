@@ -128,3 +128,7 @@
 .align-items-first-baseline {
     align-items: first baseline;
 }
+
+.align-items-last-baseline {
+    align-items: last baseline;
+}

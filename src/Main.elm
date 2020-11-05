@@ -404,4 +404,18 @@ baselineAlignItems =
                 , div [] [ text "5" ]
                 ]
             ]
+        , div []
+            [ h4 [] [ text "last baseline" ]
+            , text "最終行のベースラインに合わせる"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-items-last-baseline"
+                ]
+                [ div [] [ text "1" ]
+                , div [] [ text "2" ]
+                , div [] [ text "3" ]
+                , div [] [ text "4" ]
+                , div [] [ text "5" ]
+                ]
+            ]
         ]
