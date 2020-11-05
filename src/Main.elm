@@ -313,11 +313,25 @@ positionalAlignItems =
                 ]
             ]
         , div []
-            [ h4 [] [ text "start" ]
+            [ h4 [] [ text "start(Firefoxのみ対応)" ]
             , text "先頭寄せ"
             , div
                 [ A.class "flex-container"
                 , A.class "align-items-start"
+                ]
+                [ div [] [ text "1" ]
+                , div [] [ text "2" ]
+                , div [] [ text "3" ]
+                , div [] [ text "4" ]
+                , div [] [ text "5" ]
+                ]
+            ]
+        , div []
+            [ h4 [] [ text "end(Firefoxのみ対応)" ]
+            , text "末尾寄せ"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-items-end"
                 ]
                 [ div [] [ text "1" ]
                 , div [] [ text "2" ]
