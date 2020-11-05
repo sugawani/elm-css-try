@@ -62,6 +62,9 @@ view model =
         , basicPositionalAlignContent
         , h3 [] [ text "ベースライン" ]
         , baselineAlignContent
+        , h2 [] [ text "align-items" ]
+        , h3 [] [ text "基本キーワード" ]
+        , normalAlignItems
         ]
 
 
@@ -127,7 +130,7 @@ distributedAlignContent =
             [ h4 [] [ text "space-between" ]
             , text "先頭と末尾にそれぞれ寄せる"
             , div
-                [ A.class "flex-container" 
+                [ A.class "flex-container"
                 , A.class "align-content-space-between"
                 ]
                 flexContent
@@ -136,7 +139,7 @@ distributedAlignContent =
             [ h4 [] [ text "space-evenly" ]
             , text "端にはアイテム感と同じ間隔を空ける"
             , div
-                [ A.class "flex-container" 
+                [ A.class "flex-container"
                 , A.class "align-content-space-evenly"
                 ]
                 flexContent
@@ -225,7 +228,7 @@ baselineAlignContent =
                 , A.class "align-content-baseline"
                 ]
                 [ div [] [ text "1" ]
-                , div [] [ text "改行", br [] [] ,text "テキスト" ]
+                , div [] [ text "改行", br [] [], text "テキスト" ]
                 , div [] [ text "3" ]
                 ]
             ]
@@ -237,7 +240,7 @@ baselineAlignContent =
                 , A.class "align-content-first-baseline"
                 ]
                 [ div [] [ text "1" ]
-                , div [] [ text "改行", br [] [] ,text "テキスト" ]
+                , div [] [ text "改行", br [] [], text "テキスト" ]
                 , div [] [ text "3" ]
                 ]
             ]
@@ -249,8 +252,28 @@ baselineAlignContent =
                 , A.class "align-content-last-baseline"
                 ]
                 [ div [] [ text "1" ]
-                , div [] [ text "改行", br [] [] ,text "テキスト" ]
+                , div [] [ text "改行", br [] [], text "テキスト" ]
                 , div [] [ text "3" ]
+                ]
+            ]
+        ]
+
+
+normalAlignItems : Html Msg
+normalAlignItems =
+    div [ A.class "align-items-container" ]
+        [ div []
+            [ h4 [] [ text "normal" ]
+            , text "レイアウトに依存 flexの場合strech"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-items-cormal"
+                ]
+                [ div [] [ text "1" ]
+                , div [] [ text "2" ]
+                , div [] [ text "3" ]
+                , div [] [ text "4" ]
+                , div [] [ text "5" ]
                 ]
             ]
         ]
