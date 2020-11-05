@@ -67,6 +67,8 @@ view model =
         , normalAlignItems
         , h3 [] [ text "位置指定" ]
         , positionalAlignItems
+        , h3 [] [ text "ベースライン" ]
+        , baselineAlignItems
         ]
 
 
@@ -360,6 +362,26 @@ positionalAlignItems =
             , div
                 [ A.class "flex-container"
                 , A.class "align-items-flex-end"
+                ]
+                [ div [] [ text "1" ]
+                , div [] [ text "2" ]
+                , div [] [ text "3" ]
+                , div [] [ text "4" ]
+                , div [] [ text "5" ]
+                ]
+            ]
+        ]
+
+
+baselineAlignItems : Html Msg
+baselineAlignItems =
+    div [ A.class "align-items-container" ]
+        [ div []
+            [ h4 [] [ text "baseline" ]
+            , text "1行目のベースラインに合わせる"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-items-baseline"
                 ]
                 [ div [] [ text "1" ]
                 , div [] [ text "2" ]
