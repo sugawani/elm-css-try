@@ -390,4 +390,18 @@ baselineAlignItems =
                 , div [] [ text "5" ]
                 ]
             ]
+        , div []
+            [ h4 [] [ text "first baseline" ]
+            , text "1行目のベースラインに合わせる"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-items-first-baseline"
+                ]
+                [ div [] [ text "1" ]
+                , div [] [ text "2" ]
+                , div [] [ text "3" ]
+                , div [] [ text "4" ]
+                , div [] [ text "5" ]
+                ]
+            ]
         ]
