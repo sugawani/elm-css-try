@@ -65,6 +65,8 @@ view model =
         , h2 [] [ text "align-items" ]
         , h3 [] [ text "基本キーワード" ]
         , normalAlignItems
+        , h3 [] [ text "位置指定" ]
+        , positionalAlignItems
         ]
 
 
@@ -267,7 +269,7 @@ normalAlignItems =
             , text "レイアウトに依存 flexの場合stretch"
             , div
                 [ A.class "flex-container"
-                , A.class "align-items-cormal"
+                , A.class "align-items-normal"
                 ]
                 [ div [] [ text "1" ]
                 , div [] [ text "2" ]
@@ -282,6 +284,26 @@ normalAlignItems =
             , div
                 [ A.class "flex-container"
                 , A.class "align-items-stretch"
+                ]
+                [ div [] [ text "1" ]
+                , div [] [ text "2" ]
+                , div [] [ text "3" ]
+                , div [] [ text "4" ]
+                , div [] [ text "5" ]
+                ]
+            ]
+        ]
+
+
+positionalAlignItems : Html Msg
+positionalAlignItems =
+    div [ A.class "align-items-container" ]
+        [ div []
+            [ h4 [] [ text "center" ]
+            , text "中央寄せ"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-items-center"
                 ]
                 [ div [] [ text "1" ]
                 , div [] [ text "2" ]
