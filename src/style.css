@@ -153,3 +153,8 @@
     align-self: end;
     background-color: lightcoral !important;
 }
+
+.align-self-self-start {
+    align-self: self-start;
+    background-color: lightcoral !important;
+}
