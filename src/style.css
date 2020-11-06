@@ -158,3 +158,8 @@
     align-self: self-start;
     background-color: lightcoral !important;
 }
+
+.align-self-self-end {
+    align-self: self-end;
+    background-color: lightcoral !important;
+}

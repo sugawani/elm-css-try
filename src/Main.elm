@@ -471,7 +471,7 @@ positionalAlignSelf =
                 ]
             ]
         , div []
-            [ h4 [] [ text "self-start" ]
+            [ h4 [] [ text "self-start(Firefoxのみ対応)" ]
             , text "先頭寄せ"
             , div
                 [ A.class "flex-container"
@@ -479,6 +479,20 @@ positionalAlignSelf =
                 , A.style "align-items" "center"
                 ]
                 [ div [ A.class "align-self-self-start" ] [ text "1" ]
+                , div [] [ text "2" ]
+                , div [] [ text "3" ]
+                , div [] [ text "4" ]
+                , div [] [ text "5" ]
+                ]
+            ]
+        , div []
+            [ h4 [] [ text "self-end(Firefoxのみ対応)" ]
+            , text "先頭寄せ"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-self-container"
+                ]
+                [ div [ A.class "align-self-self-end" ] [ text "1" ]
                 , div [] [ text "2" ]
                 , div [] [ text "3" ]
                 , div [] [ text "4" ]
