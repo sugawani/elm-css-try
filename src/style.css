@@ -141,12 +141,15 @@
 
 .align-self-center {
     align-self: center;
+    background-color: lightcoral !important;
 }
 
 .align-self-start {
     align-self: start;
+    background-color: lightcoral !important;
 }
 
 .align-self-end {
     align-self: end;
+    background-color: lightcoral !important;
 }
