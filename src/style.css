@@ -173,3 +173,8 @@
     align-self: flex-end;
     background-color: lightcoral !important;
 }
+
+.align-self-baseline {
+    align-self: baseline;
+    background-color: lightcoral !important;
+}
