@@ -69,6 +69,9 @@ view model =
         , positionalAlignItems
         , h3 [] [ text "ベースライン" ]
         , baselineAlignItems
+        , h2 [] [ text "align-self" ]
+        , h3 [] [ text "位置指定" ]
+        , positionalAlignSelf
         ]
 
 
@@ -412,6 +415,26 @@ baselineAlignItems =
                 , A.class "align-items-last-baseline"
                 ]
                 [ div [] [ text "1" ]
+                , div [] [ text "2" ]
+                , div [] [ text "3" ]
+                , div [] [ text "4" ]
+                , div [] [ text "5" ]
+                ]
+            ]
+        ]
+
+
+positionalAlignSelf : Html Msg
+positionalAlignSelf =
+        div [ A.class "align-self-container" ]
+        [ div []
+            [ h4 [] [ text "center" ]
+            , text "アイテムを中央付近に配置"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-self-container"
+                ]
+                [ div [ A.class "align-self-center" ] [ text "1" ]
                 , div [] [ text "2" ]
                 , div [] [ text "3" ]
                 , div [] [ text "4" ]

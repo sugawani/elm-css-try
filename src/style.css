@@ -132,3 +132,13 @@
 .align-items-last-baseline {
     align-items: last baseline;
 }
+
+.align-self-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.align-self-center {
+    align-self: center;
+}
