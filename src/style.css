@@ -146,3 +146,7 @@
 .align-self-start {
     align-self: start;
 }
+
+.align-self-end {
+    align-self: end;
+}
