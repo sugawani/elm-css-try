@@ -578,4 +578,18 @@ baselineAlignSelf =
                 , div [] [ text "5" ]
                 ]
             ]
+        , div []
+            [ h4 [] [ text "stretch" ]
+            , text "範囲いっぱいまで伸びる"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-self-container"
+                ]
+                [ div [ A.class "align-self-stretch" ] [ text "1" ]
+                , div [] [ text "2" ]
+                , div [] [ text "3" ]
+                , div [] [ text "4" ]
+                , div [] [ text "5" ]
+                ]
+            ]
         ]

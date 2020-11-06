@@ -188,3 +188,8 @@
     align-self: last baseline;
     background-color: lightcoral !important;
 }
+
+.align-self-stretch {
+    align-self: stretch;
+    background-color: lightcoral !important;
+}
