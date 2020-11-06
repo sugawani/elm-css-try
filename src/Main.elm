@@ -514,4 +514,18 @@ positionalAlignSelf =
                 , div [] [ text "5" ]
                 ]
             ]
+        , div []
+            [ h4 [] [ text "flex-end" ]
+            , text "末尾寄せ"
+            , div
+                [ A.class "flex-container"
+                , A.class "align-self-container"
+                ]
+                [ div [ A.class "align-self-flex-end" ] [ text "1" ]
+                , div [] [ text "2" ]
+                , div [] [ text "3" ]
+                , div [] [ text "4" ]
+                , div [] [ text "5" ]
+                ]
+            ]
         ]

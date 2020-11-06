@@ -168,3 +168,8 @@
     align-self: flex-start;
     background-color: lightcoral !important;
 }
+
+.align-self-flex-end {
+    align-self: flex-end;
+    background-color: lightcoral !important;
+}
