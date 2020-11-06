@@ -178,3 +178,8 @@
     align-self: baseline;
     background-color: lightcoral !important;
 }
+
+.align-self-first-baseline {
+    align-self: first baseline;
+    background-color: lightcoral !important;
+}
