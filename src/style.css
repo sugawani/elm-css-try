@@ -246,3 +246,7 @@
 .angle-grad {
     transform: rotate(50grad);
 }
+
+.angle-rad {
+    transform: rotate(0.7854rad);
+}

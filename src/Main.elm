@@ -689,11 +689,20 @@ angle =
                 []
             ]
         , div []
-            [ h3 [] [ text "rad" ]
+            [ h3 [] [ text "grad" ]
             , text "50grad"
             , div
                 [ A.class "angle-base"
                 , A.class "angle-grad"
+                ]
+                []
+            ]
+        , div []
+            [ h3 [] [ text "rad" ]
+            , text "0.7854rad"
+            , div
+                [ A.class "angle-base"
+                , A.class "angle-rad"
                 ]
                 []
             ]
