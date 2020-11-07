@@ -76,6 +76,8 @@ view model =
         , baselineAlignSelf
         , h2 [] [ text "all" ]
         , all
+        , h2 [] [ text "<angle>" ]
+        , angle
         ]
 
 
@@ -670,5 +672,20 @@ all =
                     ]
                 , text "div text"
                 ]
+            ]
+        ]
+
+
+angle : Html Msg
+angle =
+    div [ A.class "angle-container" ]
+        [ div []
+            [ h3 [] [ text "deg" ]
+            , text "45deg"
+            , div
+                [ A.class "angle-base"
+                , A.class "angle-deg"
+                ]
+                []
             ]
         ]
