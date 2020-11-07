@@ -193,3 +193,23 @@
     align-self: stretch;
     background-color: lightcoral !important;
 }
+
+.all-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.all-parent {
+    background-color: lightblue;
+    width: 150px;
+    height: 140px;
+    color: green;
+}
+
+.all-child {
+    color: red;
+}
+
+.all-initial {
+    all: initial;
+}

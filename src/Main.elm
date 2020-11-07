@@ -74,6 +74,8 @@ view model =
         , positionalAlignSelf
         , h3 [] [ text "ベースライン" ]
         , baselineAlignSelf
+        , h2 [] [ text "all" ]
+        , all
         ]
 
 
@@ -590,6 +592,23 @@ baselineAlignSelf =
                 , div [] [ text "3" ]
                 , div [] [ text "4" ]
                 , div [] [ text "5" ]
+                ]
+            ]
+        ]
+
+
+all : Html Msg
+all =
+    div [ A.class "all-container" ]
+        [ div []
+            [ h3 [] [ text "all なし" ]
+            , text "ユーザ指定"
+            , div [ A.class "all-parent" ]
+                [ div [ A.class "all-child" ]
+                    [ span []
+                        [ text "div > span text" ]
+                    ]
+                , text "div text"
                 ]
             ]
         ]
