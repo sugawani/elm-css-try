@@ -641,4 +641,20 @@ all =
                 , text "div text"
                 ]
             ]
+        , div []
+            [ h3 [] [ text "inherit" ]
+            , text "継承"
+            , div [ A.class "all-parent" ]
+                [ div
+                    [ A.class "all-child"
+                    , A.class "all-inherit"
+                    ]
+                    [ text "div > div text"
+                    , br [] []
+                    , text "親divの継承値になってる"
+                    , br [] []
+                    ]
+                , text "div text"
+                ]
+            ]
         ]

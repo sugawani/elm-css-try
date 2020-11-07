@@ -218,3 +218,7 @@
 .all-unset {
     all: unset;
 }
+
+.all-inherit {
+    all: inherit;
+}
