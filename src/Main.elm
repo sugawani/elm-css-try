@@ -48,6 +48,13 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
+        [ cssA
+        ]
+
+
+cssA : Html Msg
+cssA =
+    div []
         [ h1 [] [ text "A" ]
         , h2 [] [ text ":active" ]
         , active
