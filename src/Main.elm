@@ -627,4 +627,18 @@ all =
                 , text "div text"
                 ]
             ]
+        , div []
+            [ h3 [] [ text "unset" ]
+            , text "継承/初期化"
+            , div [ A.class "all-parent" ]
+                [ div
+                    [ A.class "all-child"
+                    , A.class "all-unset"
+                    ]
+                    [ text "div > div text"
+                    , br [] []
+                    ]
+                , text "div text"
+                ]
+            ]
         ]

@@ -214,3 +214,7 @@
 .all-initial {
     all: initial;
 }
+
+.all-unset {
+    all: unset;
+}
