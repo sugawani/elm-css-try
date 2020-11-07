@@ -601,12 +601,28 @@ all : Html Msg
 all =
     div [ A.class "all-container" ]
         [ div []
-            [ h3 [] [ text "all なし" ]
-            , text "ユーザ指定"
+            [ h3 [] [ text "initial" ]
+            , text "ベース"
             , div [ A.class "all-parent" ]
-                [ div [ A.class "all-child" ]
-                    [ span []
-                        [ text "div > span text" ]
+                [ div
+                    [ A.class "all-child"
+                    ]
+                    [ text "div > div text"
+                    , br [] []
+                    ]
+                , text "div text"
+                ]
+            ]
+        , div []
+            [ h3 [] [ text "initial" ]
+            , text "初期化"
+            , div [ A.class "all-parent" ]
+                [ div
+                    [ A.class "all-child"
+                    , A.class "all-initial"
+                    ]
+                    [ text "div > div text"
+                    , br [] []
                     ]
                 , text "div text"
                 ]
