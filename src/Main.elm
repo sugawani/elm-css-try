@@ -657,4 +657,18 @@ all =
                 , text "div text"
                 ]
             ]
+        , div []
+            [ h3 [] [ text "revert" ]
+            , text "unsetと同じ?"
+            , div [ A.class "all-parent" ]
+                [ div
+                    [ A.class "all-child"
+                    , A.class "all-revert"
+                    ]
+                    [ text "div > div text"
+                    , br [] []
+                    ]
+                , text "div text"
+                ]
+            ]
         ]
