@@ -242,3 +242,7 @@
 .angle-deg {
     transform: rotate(45deg);
 }
+
+.angle-grad {
+    transform: rotate(50grad);
+}
