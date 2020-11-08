@@ -49,43 +49,47 @@ view : Model -> Html Msg
 view model =
     div []
         [ cssA
+        , cssB
         ]
 
 
 cssA : Html Msg
 cssA =
-    div []
-        [ h1 [] [ text "A" ]
-        , h2 [] [ text ":active" ]
-        , active
-        , h2 [] [ text "additive-symbols(Firefoxのみ対応)" ]
-        , additiveSymbols
-        , h2 [] [ text "::after" ]
-        , after
-        , h2 [] [ text "align-content(flexとflex-wrapが必要)" ]
-        , h3 [] [ text "均等配置" ]
-        , distributedAlignContent
-        , h3 [] [ text "位置指定" ]
-        , basicPositionalAlignContent
-        , h3 [] [ text "ベースライン" ]
-        , baselineAlignContent
-        , h2 [] [ text "align-items" ]
-        , h3 [] [ text "基本キーワード" ]
-        , normalAlignItems
-        , h3 [] [ text "位置指定" ]
-        , positionalAlignItems
-        , h3 [] [ text "ベースライン" ]
-        , baselineAlignItems
-        , h2 [] [ text "align-self" ]
-        , h3 [] [ text "位置指定" ]
-        , positionalAlignSelf
-        , h3 [] [ text "ベースライン" ]
-        , baselineAlignSelf
-        , h2 [] [ text "all" ]
-        , all
-        , h2 [] [ text "<angle>" ]
-        , angle
-        ]
+    details []
+        [ summary [] [ text "A Section" ]
+        , div []
+            [ h1 [] [ text "A" ]
+            , h2 [] [ text ":active" ]
+            , active
+            , h2 [] [ text "additive-symbols(Firefoxのみ対応)" ]
+            , additiveSymbols
+            , h2 [] [ text "::after" ]
+            , after
+            , h2 [] [ text "align-content(flexとflex-wrapが必要)" ]
+            , h3 [] [ text "均等配置" ]
+            , distributedAlignContent
+            , h3 [] [ text "位置指定" ]
+            , basicPositionalAlignContent
+            , h3 [] [ text "ベースライン" ]
+            , baselineAlignContent
+            , h2 [] [ text "align-items" ]
+            , h3 [] [ text "基本キーワード" ]
+            , normalAlignItems
+            , h3 [] [ text "位置指定" ]
+            , positionalAlignItems
+            , h3 [] [ text "ベースライン" ]
+            , baselineAlignItems
+            , h2 [] [ text "align-self" ]
+            , h3 [] [ text "位置指定" ]
+            , positionalAlignSelf
+            , h3 [] [ text "ベースライン" ]
+            , baselineAlignSelf
+            , h2 [] [ text "all" ]
+            , all
+            , h2 [] [ text "<angle>" ]
+            , angle
+            ]
+    ]
 
 
 active : Html Msg
