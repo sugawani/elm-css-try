@@ -89,7 +89,7 @@ cssA =
             , h2 [] [ text "<angle>" ]
             , angle
             ]
-    ]
+        ]
 
 
 active : Html Msg
@@ -726,4 +726,31 @@ angle =
                 ]
                 []
             ]
+        ]
+
+
+cssB : Html Msg
+cssB =
+    details []
+        [ summary [] [ text "B Section" ]
+        , div []
+            [ h1 [] [ text "B" ]
+            , h2 [] [ text "::backdrop" ]
+            , backdrop
+            ]
+        ]
+
+
+backdrop : Html Msg
+backdrop =
+    div []
+        [ p [] [ text "フルスクリーン時の背景色等を指定できる(今回は明るい緑を指定)" ]
+        , video
+            [ A.controls True
+            , A.src "https://animethemes.moe/video/SteinsGateZero-OP1.webm"
+            , A.width 300
+            , A.height 200
+            , A.poster "http://www.kagaku-adv.com/wp/wp-content/uploads/2019/08/steinsgate_zero.png"
+            ]
+            []
         ]
