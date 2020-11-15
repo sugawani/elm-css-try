@@ -848,5 +848,17 @@ backdropFilter =
                 , div [ A.class "backdrop-filter-invert" ] []
                 ]
             ]
+        , div []
+            [ h3 [] [ text "opacity" ]
+            , text "透過(よくわからん)"
+            , div [ A.class "backdrop-filter-base" ]
+                [ img
+                    [ A.src "akabeko.jpg"
+                    , A.class "backrdop-filter-image"
+                    ]
+                    []
+                , div [ A.class "backdrop-filter-opacity" ] []
+                ]
+            ]
         ]
         ]
