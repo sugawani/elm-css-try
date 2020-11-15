@@ -788,4 +788,17 @@ backdropFilter =
                 , div [ A.class "backdrop-filter-brightness" ] []
                 ]
             ]
+        , div []
+            [ h3 [] [ text "contrast" ]
+            , text "要素の背景のコントラスト"
+            , div [ A.class "backdrop-filter-base" ]
+                [ img
+                    [ A.src "steins_gate_zero.png"
+                    , A.class "backrdop-filter-image"
+                    ]
+                    []
+                , div [ A.class "backdrop-filter-contrast" ] []
+                ]
+            ]
+        ]
         ]

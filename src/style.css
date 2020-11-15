@@ -290,3 +290,11 @@ video::backdrop {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: brightness(0.1);
 }
+
+.backdrop-filter-contrast {
+    position: absolute;
+    width: 150px;
+    height: 84.4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: contrast(0.5);
+}
