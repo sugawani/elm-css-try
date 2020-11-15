@@ -766,7 +766,7 @@ backdropFilter =
     div [ A.class "backdrop-filter-container" ]
         [ div []
             [ h3 [] [ text "blue" ]
-            , text "要素の背景にブラー"
+            , text "ブラー"
             , div [ A.class "backdrop-filter-base" ]
                 [ img
                     [ A.src "steins_gate_zero.png"
@@ -778,7 +778,7 @@ backdropFilter =
             ]
         , div []
             [ h3 [] [ text "brightness" ]
-            , text "要素の背景の明るさ"
+            , text "明るさ"
             , div [ A.class "backdrop-filter-base" ]
                 [ img
                     [ A.src "steins_gate_zero.png"
@@ -790,7 +790,7 @@ backdropFilter =
             ]
         , div []
             [ h3 [] [ text "contrast" ]
-            , text "要素の背景のコントラスト"
+            , text "コントラスト"
             , div [ A.class "backdrop-filter-base" ]
                 [ img
                     [ A.src "steins_gate_zero.png"
@@ -798,6 +798,18 @@ backdropFilter =
                     ]
                     []
                 , div [ A.class "backdrop-filter-contrast" ] []
+                ]
+            ]
+        , div []
+            [ h3 [] [ text "drop-shadow" ]
+            , text "ドロップシャドウ(動かん)"
+            , div [ A.class "backdrop-filter-base" ]
+                [ img
+                    [ A.src "steins_gate_zero.png"
+                    , A.class "backrdop-filter-image"
+                    ]
+                    []
+                , div [ A.class "backdrop-filter-drop-shadow" ] []
                 ]
             ]
         ]
