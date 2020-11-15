@@ -824,5 +824,17 @@ backdropFilter =
                 , div [ A.class "backdrop-filter-grayscale" ] []
                 ]
             ]
+        , div []
+            [ h3 [] [ text "hue-rotate" ]
+            , text "色相"
+            , div [ A.class "backdrop-filter-base" ]
+                [ img
+                    [ A.src "akabeko.jpg"
+                    , A.class "backrdop-filter-image"
+                    ]
+                    []
+                , div [ A.class "backdrop-filter-hue-rotate" ] []
+                ]
+            ]
         ]
         ]
