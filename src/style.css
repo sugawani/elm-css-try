@@ -277,9 +277,16 @@ video::backdrop {
 
 .backdrop-filter-blur {
     position: absolute;
-    background-color: darkseagreen;
     width: 150px;
     height: 84.4px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
+}
+
+.backdrop-filter-brightness {
+    position: absolute;
+    width: 150px;
+    height: 84.4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: brightness(0.1);
 }

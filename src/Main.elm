@@ -760,6 +760,7 @@ backdrop =
             []
         ]
 
+
 backdropFilter : Html Msg
 backdropFilter =
     div [ A.class "backdrop-filter-container" ]
@@ -770,8 +771,21 @@ backdropFilter =
                 [ img
                     [ A.src "steins_gate_zero.png"
                     , A.class "backrdop-filter-image"
-                    ] []
+                    ]
+                    []
                 , div [ A.class "backdrop-filter-blur" ] []
+                ]
+            ]
+        , div []
+            [ h3 [] [ text "brightness" ]
+            , text "要素の背景の明るさ"
+            , div [ A.class "backdrop-filter-base" ]
+                [ img
+                    [ A.src "steins_gate_zero.png"
+                    , A.class "backrdop-filter-image"
+                    ]
+                    []
+                , div [ A.class "backdrop-filter-brightness" ] []
                 ]
             ]
         ]
