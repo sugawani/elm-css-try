@@ -307,3 +307,11 @@ video::backdrop {
     /* 上手く動いてない気がする,要素としては存在してる */
     backdrop-filter: drop-shadow(30px 10px 10px blue);
 }
+
+.backdrop-filter-grayscale {
+    position: absolute;
+    width: 150px;
+    height: 84.4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: grayscale(100%);
+}

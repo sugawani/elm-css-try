@@ -769,7 +769,7 @@ backdropFilter =
             , text "ブラー"
             , div [ A.class "backdrop-filter-base" ]
                 [ img
-                    [ A.src "steins_gate_zero.png"
+                    [ A.src "akabeko.jpg"
                     , A.class "backrdop-filter-image"
                     ]
                     []
@@ -781,7 +781,7 @@ backdropFilter =
             , text "明るさ"
             , div [ A.class "backdrop-filter-base" ]
                 [ img
-                    [ A.src "steins_gate_zero.png"
+                    [ A.src "akabeko.jpg"
                     , A.class "backrdop-filter-image"
                     ]
                     []
@@ -793,7 +793,7 @@ backdropFilter =
             , text "コントラスト"
             , div [ A.class "backdrop-filter-base" ]
                 [ img
-                    [ A.src "steins_gate_zero.png"
+                    [ A.src "akabeko.jpg"
                     , A.class "backrdop-filter-image"
                     ]
                     []
@@ -805,11 +805,23 @@ backdropFilter =
             , text "ドロップシャドウ(動かん)"
             , div [ A.class "backdrop-filter-base" ]
                 [ img
-                    [ A.src "steins_gate_zero.png"
+                    [ A.src "akabeko.jpg"
                     , A.class "backrdop-filter-image"
                     ]
                     []
                 , div [ A.class "backdrop-filter-drop-shadow" ] []
+                ]
+            ]
+        , div []
+            [ h3 [] [ text "grayscale" ]
+            , text "グレースケール"
+            , div [ A.class "backdrop-filter-base" ]
+                [ img
+                    [ A.src "akabeko.jpg"
+                    , A.class "backrdop-filter-image"
+                    ]
+                    []
+                , div [ A.class "backdrop-filter-grayscale" ] []
                 ]
             ]
         ]
