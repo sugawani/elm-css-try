@@ -737,6 +737,11 @@ cssB =
             [ h1 [] [ text "B" ]
             , h2 [] [ text "::backdrop" ]
             , backdrop
+            , h2 [] [ text "backdrop-filter" ]
+            , text "要素の背景にグラフィック効果を適用する"
+            , br [] []
+            , text "Firefoxはlayout.css.backdrop-filter.enabled有効化必須"
+            , backdropFilter
             ]
         ]
 
@@ -753,4 +758,20 @@ backdrop =
             , A.poster "http://www.kagaku-adv.com/wp/wp-content/uploads/2019/08/steinsgate_zero.png"
             ]
             []
+        ]
+
+backdropFilter : Html Msg
+backdropFilter =
+    div [ A.class "backdrop-filter-container" ]
+        [ div []
+            [ h3 [] [ text "blue" ]
+            , text "要素の背景にブラー"
+            , div [ A.class "backdrop-filter-base" ]
+                [ img
+                    [ A.src "steins_gate_zero.png"
+                    , A.class "backrdop-filter-image"
+                    ] []
+                , div [ A.class "backdrop-filter-blur" ] []
+                ]
+            ]
         ]

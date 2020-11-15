@@ -258,3 +258,28 @@
 video::backdrop {
     background-color: lightgreen;
 }
+
+.backdrop-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.backdrop-filter-base {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backrdop-filter-image {
+    width: 300px;
+    height: 168.8px;
+}
+
+.backdrop-filter-blur {
+    position: absolute;
+    background-color: darkseagreen;
+    width: 150px;
+    height: 84.4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
