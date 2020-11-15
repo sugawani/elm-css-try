@@ -323,3 +323,11 @@ video::backdrop {
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: hue-rotate(90deg);
 }
+
+.backdrop-filter-invert {
+    position: absolute;
+    width: 150px;
+    height: 84.4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: invert(1);
+}
