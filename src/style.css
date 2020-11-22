@@ -355,3 +355,28 @@ video::backdrop {
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: sepia(1);
 }
+
+.backface-visibility-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.backface-visibility-image {
+    width: 300px;
+    height: 168.8px;
+}
+
+.backface-visibility-visiable {
+    backface-visibility: visible;
+    animation: backface-visibility-rotater 10s infinite ease 1s;
+}
+
+.backface-visibility-hidden {
+    backface-visibility: hidden;
+    animation: backface-visibility-rotater 10s infinite ease 1s;
+}
+
+@keyframes backface-visibility-rotater {
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}

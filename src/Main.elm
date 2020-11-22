@@ -742,6 +742,10 @@ cssB =
             , br [] []
             , text "Firefoxはlayout.css.backdrop-filter.enabled有効化必須"
             , backdropFilter
+            , h2 [] [ text "backface-visibility" ]
+            , text "要素の背景の可視化"
+            , br [] []
+            , backfaceVisibility
             ]
         ]
 
@@ -882,6 +886,34 @@ backdropFilter =
                     ]
                     []
                 , div [ A.class "backdrop-filter-sepia" ] []
+                ]
+            ]
+        ]
+
+
+backfaceVisibility : Html Msg
+backfaceVisibility =
+    div [ A.class "backface-visibility-container" ]
+        [ div []
+            [ h3 [] [ text "visiable" ]
+            , text "背面も見える"
+            , div [ A.class "backface-visibility-visiable" ]
+                [ img
+                    [ A.src "akabeko.jpg"
+                    , A.class "backface-visibility-image"
+                    ]
+                    []
+                ]
+            ]
+        , div []
+            [ h3 [] [ text "hidden" ]
+            , text "背面は非表示になる"
+            , div [ A.class "backface-visibility-hidden" ]
+                [ img
+                    [ A.src "akabeko.jpg"
+                    , A.class "backface-visibility-image"
+                    ]
+                    []
                 ]
             ]
         ]
