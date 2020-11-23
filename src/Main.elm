@@ -192,7 +192,7 @@ flexContent =
 
 basicPositionalAlignContent : Html Msg
 basicPositionalAlignContent =
-    div [ A.class "align-content-container" ]
+    div [ A.class "container" ]
         [ div []
             [ h4 [] [ text "center" ]
             , text "中央寄せ"
@@ -285,7 +285,7 @@ baselineAlignContent =
 
 normalAlignItems : Html Msg
 normalAlignItems =
-    div [ A.class "align-items-container" ]
+    div [ A.class "container" ]
         [ div []
             [ h4 [] [ text "normal" ]
             , text "レイアウトに依存 flexの場合stretch"
@@ -443,7 +443,10 @@ baselineAlignItems =
 
 positionalAlignSelf : Html Msg
 positionalAlignSelf =
-    div [ A.class "align-self-container" ]
+    div
+        [ A.class "align-self-container"
+        , A.class "container"
+        ]
         [ div []
             [ h4 [] [ text "center" ]
             , text "中央寄せ"
@@ -612,7 +615,7 @@ baselineAlignSelf =
 
 all : Html Msg
 all =
-    div [ A.class "all-container" ]
+    div [ A.class "container" ]
         [ div []
             [ h3 [] [ text "initial" ]
             , text "ベース"
@@ -731,7 +734,7 @@ angle =
 
 cssB : Html Msg
 cssB =
-    details []
+    details [ A.attribute "open" "true" ]
         [ summary [] [ text "B Section" ]
         , div []
             [ h1 [] [ text "B" ]
@@ -767,7 +770,7 @@ backdrop =
 
 backdropFilter : Html Msg
 backdropFilter =
-    div [ A.class "backdrop-filter-container" ]
+    div [ A.class "container" ]
         [ div []
             [ h3 [] [ text "blue" ]
             , text "ブラー"
@@ -893,7 +896,7 @@ backdropFilter =
 
 backfaceVisibility : Html Msg
 backfaceVisibility =
-    div [ A.class "backface-visibility-container" ]
+    div [ A.class "container" ]
         [ div []
             [ h3 [] [ text "visiable" ]
             , text "背面も見える"
