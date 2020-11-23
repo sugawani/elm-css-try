@@ -741,14 +741,15 @@ cssB =
             , h2 [] [ text "::backdrop" ]
             , backdrop
             , h2 [] [ text "backdrop-filter" ]
-            , text "要素の背景にグラフィック効果を適用する"
-            , br [] []
+            , p [] [ text "要素の背景にグラフィック効果を適用する" ]
             , text "Firefoxはlayout.css.backdrop-filter.enabled有効化必須"
             , backdropFilter
             , h2 [] [ text "backface-visibility" ]
-            , text "要素の背景の可視化"
-            , br [] []
+            , p [] [ text "要素の背景の可視化" ]
             , backfaceVisibility
+            , h2 [] [ text "background-attachment" ]
+            , p [] [ text "背景のスクロール制御" ]
+            , backgroundAttachment
             ]
         ]
 
@@ -919,4 +920,40 @@ backfaceVisibility =
                     []
                 ]
             ]
+        ]
+
+
+backgroundAttachment : Html Msg
+backgroundAttachment =
+    div [ A.class "container" ]
+        [ div []
+            [ h3 [] [ text "scroll" ]
+            , text "要素のみスクロール"
+            , backgroundAttachmentBase "background-attachment-scroll"
+            ]
+        , div []
+            [ h3 [] [ text "fixed" ]
+            , text "位置固定 要素のみスクロール"
+            , backgroundAttachmentBase "background-attachment-fixed"
+            ]
+        , div []
+            [ h3 [] [ text "local" ]
+            , text "スクロールと連動"
+            , backgroundAttachmentBase "background-attachment-local"
+            ]
+        ]
+
+
+backgroundAttachmentBase : String -> Html Msg
+backgroundAttachmentBase className =
+    div
+        [ A.class "background-attachment-viewport"
+        , A.class className
+        ]
+        [ p [] [ text "There is no end though there is a start in space. -- Infinity." ]
+        , p [] [ text "It has own power, it ruins, and it goes though there is a start also in the star. ---Finite." ]
+        , p [] [ text "Only the person who was wisdom can read the most foolish one from the history." ]
+        , p [] [ text "The fish that lives in the sea doesn't know the world in the land. It also ruins and goes if they have wisdom." ]
+        , p [] [ text "It is funnier that man exceeds the speed of light than fish start living in the land." ]
+        , p [] [ text "It can be said that this is an final ultimatum from the god to the people who can fight." ]
         ]
