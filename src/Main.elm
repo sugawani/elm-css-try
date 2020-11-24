@@ -750,6 +750,9 @@ cssB =
             , h2 [] [ text "background-attachment" ]
             , p [] [ text "背景のスクロール制御" ]
             , backgroundAttachment
+            , h2 [] [ text "background-blend-mode" ]
+            , p [] [ text "背景との混合方法" ]
+            , backgroundBlendMode
             ]
         ]
 
@@ -957,3 +960,98 @@ backgroundAttachmentBase className =
         , p [] [ text "It is funnier that man exceeds the speed of light than fish start living in the land." ]
         , p [] [ text "It can be said that this is an final ultimatum from the god to the people who can fight." ]
         ]
+
+
+backgroundBlendMode : Html Msg
+backgroundBlendMode =
+    div [ A.class "container" ]
+        [ div []
+            [ h3 [] [ text "normal" ]
+            , text "画像そのまま"
+            , backgroundBlendModeBase "background-blend-mode-normal"
+            ]
+        , div []
+            [ h3 [] [ text "multiply" ]
+            , text "掛け合わせる"
+            , backgroundBlendModeBase "background-blend-mode-multiply"
+            ]
+        , div []
+            [ h3 [] [ text "screen" ]
+            , text "スクリーンをかける"
+            , backgroundBlendModeBase "background-blend-mode-screen"
+            ]
+        , div []
+            [ h3 [] [ text "overlay" ]
+            , text "上に置く(オーバーレイ)"
+            , backgroundBlendModeBase "background-blend-mode-overlay"
+            ]
+        , div []
+            [ h3 [] [ text "darken" ]
+            , text "暗く重ねる"
+            , backgroundBlendModeBase "background-blend-mode-darken"
+            ]
+        , div []
+            [ h3 [] [ text "lighten" ]
+            , text "明るく重ねる"
+            , backgroundBlendModeBase "background-blend-mode-lighten"
+            ]
+        , div []
+            [ h3 [] [ text "color-dodge" ]
+            , text "覆い焼き"
+            , backgroundBlendModeBase "background-blend-mode-color-dodge"
+            ]
+        , div []
+            [ h3 [] [ text "color-burn" ]
+            , text "焼き込み"
+            , backgroundBlendModeBase "background-blend-mode-color-burn"
+            ]
+        , div []
+            [ h3 [] [ text "soft-light" ]
+            , text "明暗を明確に(弱)"
+            , backgroundBlendModeBase "background-blend-mode-soft-light"
+            ]
+        , div []
+            [ h3 [] [ text "hard-light" ]
+            , text "明暗を明確に(強)"
+            , backgroundBlendModeBase "background-blend-mode-hard-light"
+            ]
+        , div []
+            [ h3 [] [ text "exclusion" ]
+            , text "差の絶対値(弱)"
+            , backgroundBlendModeBase "background-blend-mode-exclusion"
+            ]
+        , div []
+            [ h3 [] [ text "difference" ]
+            , text "差の絶対値(強)"
+            , backgroundBlendModeBase "background-blend-mode-difference"
+            ]
+        , div []
+            [ h3 [] [ text "hue" ]
+            , text "HLS色空間 色相"
+            , backgroundBlendModeBase "background-blend-mode-hue"
+            ]
+        , div []
+            [ h3 [] [ text "saturation" ]
+            , text "HLS色空間 彩度"
+            , backgroundBlendModeBase "background-blend-mode-saturation"
+            ]
+        , div []
+            [ h3 [] [ text "color" ]
+            , text "HLS色空間 カラー"
+            , backgroundBlendModeBase "background-blend-mode-color"
+            ]
+        , div []
+            [ h3 [] [ text "luminosity" ]
+            , text "HLS色空間 輝度"
+            , backgroundBlendModeBase "background-blend-mode-luminosity"
+            ]
+        ]
+
+
+backgroundBlendModeBase : String -> Html Msg
+backgroundBlendModeBase className =
+    div
+        [ A.class "background-blend-mode"
+        , A.class className
+        ]
+        []
